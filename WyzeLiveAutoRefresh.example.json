@@ -1,0 +1,81 @@
+{
+  "url": "https://my.wyze.com/home",
+  "check_seconds": 10,
+  "frozen_seconds": 300,
+  "unreadable_seconds": 300,
+  "min_ocr_misses": 3,
+  "recovery_seconds": 60,
+  "status_seconds": 60,
+  "tile_retry_seconds": 30,
+  "window": {
+    "width": 1400,
+    "height": 1020,
+    "page_load_timeout": 60,
+    "ready_timeout": 30
+  },
+  "chrome": {
+    "log_level": 3,
+    "profile_path": "C:/Development/Wyze/ChromeProfile",
+    "profile_directory": "Default"
+  },
+  "tesseract_path": "C:/Program Files/Tesseract-OCR/tesseract.exe",
+  "grid": {
+    "columns": 2,
+    "rows": 2,
+    "names": [
+      "Camera 1",
+      "Camera 2",
+      "Camera 3",
+      "Camera 4"
+    ],
+    "left": 0.0,
+    "right": 1.0,
+    "top": 0.0,
+    "bottom": 1.0,
+    "gap_x": 0.0,
+    "gap_y": 0.0
+  },
+  "error_phrases": [
+    "camera is offline",
+    "connection failed"
+  ],
+  "ocr": {
+    "tile_scale": 2,
+    "tile_psm": [
+      6,
+      11
+    ],
+    "min_tile_height": 80,
+    "min_tile_width": 100,
+    "timestamp_crop_top": 0.7,
+    "timestamp_crop_left": 0.6,
+    "timestamp_scale": 3,
+    "timestamp_psm": 6,
+    "timestamp_whitelist": "0123456789:.",
+    "clock_max_forward_seconds": 3600
+  },
+  "html": {
+    "refresh_button_text": "Refresh",
+    "min_button_width": 30,
+    "min_button_height": 15,
+    "refresh_max_distance": 400
+  },
+  "logs": {
+    "monitor": "wyze_monitor.log",
+    "refresh": "wyze_refresh.log",
+    "console": "wyze_console.log"
+  },
+  "auth_callback_fragment": "auth.wyze.com/callback",
+  "authentication": {
+    "email": "",
+    "password": "",
+    "login_url_fragment": "auth.wyze.com/login",
+    "max_attempts": 2,
+    "login_timeout_seconds": 45,
+    "restart_delay_seconds": 10,
+    "retry_cooldown_seconds": 300,
+    "email_selector": "input[type=\"email\"]",
+    "password_selector": "input[type=\"password\"]",
+    "submit_selector": "button[type=\"submit\"]"
+  }
+}
